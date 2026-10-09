@@ -1,0 +1,28 @@
+.header-action,
+.contact-link {
+  cursor: pointer;
+}
+
+.header-action {
+  transition: color .2s ease;
+}
+
+.header-action:hover {
+  color: var(--acid);
+}
+
+.header-action i {
+  color: var(--acid);
+  font-size: 16px;
+  line-height: 1;
+  transition: transform .2s ease;
+}
+
+.header-action:hover i {
+  transform: translateX(2px);
+}
+
+.button-accent i {
+  font-size: 15px;
+  line-height: 1;
+}
