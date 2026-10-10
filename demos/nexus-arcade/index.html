@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NEXUS//ARCADE, una demo de sala gaming y e-sports.">
+  <title>NEXUS//ARCADE | Gaming & E-sports</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="NEXUS Arcade, inicio">
+      <span>NEXUS</span><i>//</i><span>ARCADE</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <a href="#arena">La arena</a>
+      <a href="#zonas">Zonas</a>
+      <a href="#torneos">Torneos</a>
+      <a href="#reservar">Reservar</a>
+    </nav>
+    <a class="header-cta" href="#reservar">Reservar puesto <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menú">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Navegación móvil">
+    <a href="#arena">La arena</a>
+    <a href="#zonas">Zonas</a>
+    <a href="#torneos">Torneos</a>
+    <a href="#reservar">Reservar un puesto</a>
+  </nav>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Gaming lounge · E-sports · Comunidad</p>
+        <h1>La partida<br>empieza <em>aquí.</em></h1>
+        <p class="hero-text">Puestos de alto rendimiento, simuladores y espacio para competir. Entra, juega y deja que el resto ocurra en pantalla.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#reservar">Reserva tu puesto <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          <a class="text-link" href="#arena">Explorar la arena <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-label="Sala gaming NEXUS Arcade">
+        <div class="hero-photo"></div>
+        <div class="visual-overlay"></div>
+        <div class="crosshair" aria-hidden="true"></div>
+        <div class="visual-tag tag-top"><span class="status-dot"></span> SISTEMA ONLINE</div>
+        <div class="visual-tag tag-bottom">NEXUS_ARENA / 01</div>
+        <div class="hero-stats">
+          <div><strong>144</strong><span>HZ DE ENERGÍA</span></div>
+          <div><strong>PC</strong><span>HIGH END</span></div>
+          <div><strong>∞</strong><span>UNA MÁS</span></div>
+        </div>
+      </div>
+
+      <a class="scroll-prompt" href="#arena" aria-label="Bajar a La arena">
+        <span>SCROLL PARA ENTRAR</span><i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <section id="arena" class="intro section-shell">
+      <div class="section-label reveal"><span>01</span> LA ARENA</div>
+      <div class="intro-layout">
+        <h2 class="reveal">No vienes a<br><span>ver la partida.</span></h2>
+        <div class="intro-copy reveal">
+          <p>Un lugar diseñado para jugar en serio, reunirte con tu squad o descubrir tu próximo vicio. Cada zona tiene su propio ritmo; tú eliges dónde entrar.</p>
+          <div class="availability"><span class="pulse-ring"></span><strong>DEMO DE DISPONIBILIDAD</strong><span>Selecciona una zona y una franja para probar la reserva.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="zonas" class="zones section-shell">
+      <div class="section-heading reveal">
+        <div class="section-label"><span>02</span> ELIGE MODO</div>
+        <p>Una experiencia distinta para cada tipo de partida.</p>
+      </div>
+      <div class="zone-grid">
+        <article class="zone-card zone-card-featured reveal">
+          <div class="zone-card-image pc-image"></div>
+          <div class="zone-index">A_01</div>
+          <div class="zone-card-body">
+            <p>CORE PC</p>
+            <h3>Tu setup.<br>Sin límites.</h3>
+            <span>PC de alto rendimiento · 240 Hz</span>
+          </div>
+        </article>
+        <article class="zone-card reveal">
+          <div class="zone-card-image sim-image"></div>
+          <div class="zone-index">B_02</div>
+          <div class="zone-card-body">
+            <p>SIM RACING</p>
+            <h3>Curvas<br>en serio.</h3>
+            <span>Volante directo · Cockpit</span>
+          </div>
+        </article>
+        <article class="zone-card reveal">
+          <div class="zone-card-image console-image"></div>
+          <div class="zone-index">C_03</div>
+          <div class="zone-card-body">
+            <p>CONSOLE BAY</p>
+            <h3>El sofá<br>es competitivo.</h3>
+            <span>Consolas · Pantalla XL · 4 plazas</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="torneos" class="tournaments">
+      <div class="tournament-backdrop" aria-hidden="true"></div>
+      <div class="section-shell tournament-content">
+        <div class="section-heading reveal">
+          <div class="section-label light"><span>03</span> MODO COMPETICIÓN</div>
+          <p>Cuando la partida pide algo más.</p>
+        </div>
+        <div class="event-list">
+          <article class="event-card reveal">
+            <div class="event-mark">01</div>
+            <div class="event-info"><p>EVENTO DE EJEMPLO</p><h3>NEON<br>CUP</h3></div>
+            <div class="event-meta"><span>SHOOTER 5V5</span><span>PRÓXIMAMENTE</span></div>
+            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+          </article>
+          <article class="event-card reveal">
+            <div class="event-mark">02</div>
+            <div class="event-info"><p>EVENTO DE EJEMPLO</p><h3>MIDNIGHT<br>RALLY</h3></div>
+            <div class="event-meta"><span>SIM RACING</span><span>PRÓXIMAMENTE</span></div>
+            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="reservar" class="booking section-shell">
+      <div class="booking-heading reveal">
+        <div class="section-label"><span>04</span> RESERVA DEMO</div>
+        <h2>Elige tu<br><span>siguiente nivel.</span></h2>
+        <p>Esta reserva es una demostración visual. En la web final se conectaría al sistema real del local.</p>
+      </div>
+      <div class="booking-panel reveal">
+        <div class="booking-topline"><span>CONFIGURADOR DE SESIÓN</span><span id="booking-status">PASO 1 DE 2</span></div>
+        <fieldset class="booking-group">
+          <legend>01 / ZONA</legend>
+          <div class="choice-grid zone-choices">
+            <button class="choice is-selected" type="button" data-zone="Core PC"><i class="fa-solid fa-desktop" aria-hidden="true"></i><span>Core PC</span></button>
+            <button class="choice" type="button" data-zone="Sim Racing"><i class="fa-solid fa-flag-checkered" aria-hidden="true"></i><span>Sim Racing</span></button>
+            <button class="choice" type="button" data-zone="Console Bay"><i class="fa-solid fa-gamepad" aria-hidden="true"></i><span>Console Bay</span></button>
+          </div>
+        </fieldset>
+        <fieldset class="booking-group">
+          <legend>02 / FRANJA</legend>
+          <div class="time-grid">
+            <button class="time-choice" type="button" data-time="16:00 - 17:00">16:00</button>
+            <button class="time-choice is-selected" type="button" data-time="17:00 - 18:00">17:00</button>
+            <button class="time-choice" type="button" data-time="18:00 - 19:00">18:00</button>
+            <button class="time-choice" type="button" data-time="19:00 - 20:00">19:00</button>
+          </div>
+        </fieldset>
+        <div class="booking-summary"><span>TU SESIÓN</span><strong id="booking-summary">Core PC · 17:00 - 18:00</strong></div>
+        <a id="booking-link" class="button button-primary booking-button" href="https://wa.me/34646201139" target="_blank" rel="noopener noreferrer">Continuar por WhatsApp <i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+      </div>
+    </section>
+
+    <section class="visit section-shell">
+      <div class="visit-card reveal">
+        <div class="visit-content">
+          <p class="eyebrow"><span></span> NEXUS//ARCADE</p>
+          <h2>La próxima<br>pantalla es <em>tuya.</em></h2>
+          <a class="button button-ghost" href="https://wa.me/34646201139?text=Hola%2C%20quiero%20conocer%20NEXUS%2F%2FARCADE." target="_blank" rel="noopener noreferrer">Hablemos <i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+        </div>
+        <div class="visit-coordinates"><span>43.0000° N</span><span>003.0000° W</span><span>DEMO / 2026</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#inicio"><span>NEXUS</span><i>//</i><span>ARCADE</span></a>
+    <p>Demo conceptual para portfolio · Diseño web para negocios locales.</p>
+    <a href="#inicio" aria-label="Volver arriba"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

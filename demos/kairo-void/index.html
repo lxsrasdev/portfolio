@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="KAIRO//VOID, portfolio de artista visual digital.">
+  <title>KAIRO//VOID | Artista visual</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="overrides.css">
+</head>
+<body>
+  <div class="scroll-meter" aria-hidden="true"><span></span></div>
+  <header class="site-header">
+    <a class="brand" href="#inicio"><span class="brand-name">KAIRO <b>//</b> VOID</span></a>
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <a href="#obra">Obra</a><a href="#universo">Universo</a><a href="#encargos">Encargos</a>
+    </nav>
+    <button class="nav-trigger" type="button" aria-controls="immersive-nav" aria-expanded="false">Indice <span>+</span></button>
+    <a class="header-link" href="#encargos">Trabajemos <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+    <button class="menu-button" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+  </header>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Navegación móvil"><a href="#obra">Obra</a><a href="#universo">Universo</a><a href="#encargos">Encargos</a></nav>
+
+  <section id="immersive-nav" class="immersive-nav" aria-label="Navegacion principal" aria-hidden="true">
+    <div class="nav-grid" aria-hidden="true"></div>
+    <div class="nav-top"><span>KV / INDEX</span><button class="nav-close" type="button" aria-label="Cerrar navegacion"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></div>
+    <div class="nav-links"><a href="#inicio"><span>00</span>Inicio <i>01</i></a><a href="#obra"><span>01</span>Obra <i>02</i></a><a href="#universo"><span>02</span>Universo <i>03</i></a><a href="#encargos"><span>03</span>Encargos <i>04</i></a></div>
+    <div class="nav-footer"><span>ARTISTA VISUAL DIGITAL</span><span>SCROLL / SELECT / ENTER</span></div>
+  </section>
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-meta"><span>ARTISTA VISUAL DIGITAL</span><span>EST. 2026 / DEMO</span></div>
+      <div class="hero-title reveal depth-title"><p>IMÁGENES PARA</p><h1>OTROS<br><em>MUNDOS.</em></h1></div>
+      <div class="hero-art reveal depth-art" data-parallax="0.16">
+        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1500&q=90" alt="Instalación tecnológica de estética futurista">
+        <div class="art-frame" aria-hidden="true"></div>
+        <span class="art-code">KV-01 / AFTERLIGHT</span>
+      </div>
+      <div class="hero-bottom reveal"><p>Dirección creativa, arte digital y universos gráficos para música, moda y cultura visual.</p><a href="#obra">VER OBRA <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a></div>
+      <div class="vertical-type" aria-hidden="true">VISUAL ARTIST / SELECTED WORK</div>
+    </section>
+
+    <section id="obra" class="work">
+      <div class="section-top reveal"><p class="label">01 / OBRA SELECCIONADA</p><p>Una colección de piezas digitales creadas para ocupar espacio, provocar algo y quedarse un momento más en la cabeza.</p></div>
+      <div class="work-grid">
+        <article class="piece piece-main reveal tilt-card"><div class="piece-image image-iris"></div><div class="piece-info"><span>01</span><div><h2>IRIS<br>PROTOCOL</h2><p>Arte digital · 2026</p></div><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></div></article>
+        <article class="piece reveal tilt-card"><div class="piece-image image-pink"></div><div class="piece-info"><span>02</span><div><h2>NOISE<br>BODY</h2><p>Dirección de arte · 2026</p></div><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></div></article>
+        <article class="piece reveal tilt-card"><div class="piece-image image-night"></div><div class="piece-info"><span>03</span><div><h2>FALSE<br>MEMORY</h2><p>Imagen editorial · 2026</p></div><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></div></article>
+        <article class="piece reveal tilt-card"><div class="piece-image image-face"></div><div class="piece-info"><span>04</span><div><h2>NEON<br>SAINTS</h2><p>Portada musical · 2026</p></div><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></div></article>
+      </div>
+      <p class="demo-note">Las piezas y los proyectos son contenido de muestra para esta demo.</p>
+    </section>
+
+    <section id="universo" class="manifesto">
+      <div class="manifesto-lines" aria-hidden="true"></div>
+      <p class="label reveal">02 / EL UNIVERSO</p>
+      <h2 class="reveal">Lo digital no<br>tiene que sentirse<br><em>distante.</em></h2>
+      <div class="manifesto-copy reveal"><p>Trabajo con textura, luz, contraste y narrativa para construir imágenes que no parecen una plantilla. Cada proyecto empieza por una pregunta sencilla: ¿qué debería sentir alguien antes de entenderlo?</p><a href="#encargos" class="under-link">Iniciar un proyecto <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+      <p class="manifesto-mark" aria-hidden="true">K//V</p>
+    </section>
+
+    <section class="services">
+      <div class="services-title reveal"><p class="label">03 / EN QUÉ PUEDO AYUDAR</p><h2>DE LA IDEA<br>AL <em>IMPACTO.</em></h2></div>
+      <div class="service-list reveal">
+        <article><span>01</span><h3>Dirección<br>creativa</h3><p>Concepto visual y una identidad que aguanta más de un post.</p></article>
+        <article><span>02</span><h3>Portadas &<br>campañas</h3><p>Imágenes para música, lanzamientos y marcas que quieren diferenciarse.</p></article>
+        <article><span>03</span><h3>Arte digital<br>personalizado</h3><p>Piezas únicas construidas alrededor de una idea, no de una tendencia.</p></article>
+      </div>
+    </section>
+
+    <section id="encargos" class="contact-section">
+      <div class="contact-art" aria-hidden="true"><span>LET'S<br>MAKE<br>NOISE</span></div>
+      <div class="contact-copy reveal"><p class="label">04 / ENCARGOS & COLABORACIONES</p><h2>¿Tienes una idea<br>que pide <em>imagen?</em></h2><p>Cuéntame el proyecto, el contexto y dónde quieres que llegue. Esta demo abre WhatsApp; en una web real se adapta al canal de contacto del artista.</p><a class="contact-button" href="https://wa.me/34600000000?text=Hola%2C%20me%20gustar%C3%ADa%20hablar%20sobre%20un%20proyecto%20creativo." target="_blank" rel="noopener noreferrer">Hablemos de tu proyecto <i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a></div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#inicio"><span class="brand-name">KAIRO <b>//</b> VOID</span></a><p>Portfolio conceptual para una demo web.</p><a href="#inicio" aria-label="Volver al inicio"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
