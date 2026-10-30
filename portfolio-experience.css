@@ -1,6 +1,7 @@
 /* Immersive layer for the studio portfolio. */
 :root { --signal:#ff4b4b; --signal-dark:#c92e34; }
-html { scrollbar-width:none; }
+html { overflow-x:hidden; scrollbar-width:none; }
+body { overflow-x:clip; }
 html::-webkit-scrollbar,body::-webkit-scrollbar { display:none; }
 .portfolio-meter { position:fixed; z-index:60; inset:0 0 auto; height:2px; pointer-events:none; background:rgba(255,255,255,.08); }
 .portfolio-meter span { display:block; width:var(--portfolio-progress,0%); height:100%; background:var(--signal); box-shadow:0 0 14px var(--signal); transition:width .08s linear; }
@@ -40,6 +41,9 @@ body.index-open { overflow:hidden; }
 .why { position:relative; overflow:hidden; }.why::after { content:"01"; position:absolute; right:4vw; bottom:-.3em; color:rgba(24,32,29,.06); font-family:var(--display); font-size:clamp(8rem,20vw,23rem); pointer-events:none; }
 .process li { transition:padding .3s ease,background .3s ease; }.process li:hover { padding-left:18px; background:rgba(214,255,86,.12); }
 .contact { position:relative; overflow:hidden; }.contact::before { content:"DEMO"; position:absolute; right:-.06em; bottom:-.26em; color:rgba(255,255,255,.07); font-family:var(--display); font-size:clamp(9rem,23vw,28rem); font-weight:700; letter-spacing:0; pointer-events:none; }.contact-inner { position:relative; z-index:1; }.contact-link { box-shadow:5px 5px 0 var(--acid); }.contact-link:hover { box-shadow:8px 8px 0 var(--ink); }
+.contact-actions { display:flex; flex-wrap:wrap; gap:13px; margin-top:32px; }.contact-actions .contact-link { margin-top:0; }.email-action { border:1px solid var(--ink); background:transparent; color:var(--ink); }.email-action:hover { transform:translateY(-3px); background:var(--ink); color:var(--paper); }.email-action i { transition:transform .2s ease; }.email-action:hover i { transform:translateX(3px); color:var(--acid); }
+.footer-email { color:var(--ink); font-family:var(--mono); font-size:10px; text-decoration:underline; text-underline-offset:4px; }.footer-email:hover { color:var(--signal-dark); }
+@media(max-width:767px) { footer .footer-email { display:block; width:100%; margin-top:8px; }.contact-actions { align-items:stretch; }.contact-actions .button { width:100%; } }
 @media(max-width:767px) { .site-header { padding:0 16px; }.header-action { display:none; }.studio-index-trigger { display:inline-flex; margin-left:auto; }.index-links a { grid-template-columns:34px 1fr; gap:8px; font-size:clamp(3.1rem,16vw,5.8rem); }.index-links a small { display:none; }.index-bottom { font-size:8px; }.hero-visual::after { display:none; }.hero-visual { box-shadow:9px 10px 0 rgba(237,106,61,.14); }.projects::before { top:36px; }.process li:hover { padding-left:0; } }
 @media(prefers-reduced-motion:reduce) { .portfolio-meter span,.studio-index,.index-links a,.index-links a small,.browser-card,.project-card::after,.project-card .project-image img,.process li { transition:none; }.marquee-track { animation:none; } }
 

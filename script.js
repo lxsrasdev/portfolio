@@ -24,6 +24,7 @@ document.querySelector('#year').textContent = new Date().getFullYear();
 const contactLink = document.querySelector('.contact-link');
 contactLink.href = 'https://wa.me/34646201139?text=Hola%2C%20me%20gustar%C3%ADa%20hablar%20sobre%20una%20web%20para%20mi%20negocio';
 
+
 const revealTargets = document.querySelectorAll('.trust-strip, .section-heading, .project-card, .why-grid, .process li, .contact-inner');
 if (motionAllowed && 'IntersectionObserver' in window) {
   document.body.classList.add('js-ready');
