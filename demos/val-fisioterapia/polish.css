@@ -1,0 +1,81 @@
+/* Ajustes de legibilidad y consistencia visual. */
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header .nav a {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.header .nav .nav-cta,
+.header .nav .nav-cta:visited {
+  color: #fff;
+}
+
+.button-light,
+.button-light:visited {
+  color: var(--ink);
+}
+
+.header .nav > a:not(.nav-cta) {
+  position: relative;
+}
+
+.header .nav > a:not(.nav-cta)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -7px;
+  height: 1px;
+  background: var(--coral);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .22s ease;
+}
+
+.header .nav > a:not(.nav-cta):hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.hero h1,
+.intro h2,
+.services h2,
+.why h2,
+.contact h2 {
+  letter-spacing: -0.018em;
+  line-height: 1.02;
+}
+
+.hero h1 { line-height: .98; }
+
+.nav-cta svg,
+.button svg,
+.whatsapp-float svg {
+  display: none;
+}
+
+.nav-cta::before,
+.button-dark::before,
+.button-light::before,
+.whatsapp-float::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  background: url("assets/whatsapp.svg") center / contain no-repeat;
+}
+
+.button-light::before {
+  filter: brightness(0) saturate(100%) invert(18%) sepia(22%) saturate(1776%) hue-rotate(115deg) brightness(93%) contrast(96%);
+}
+
+.whatsapp-float::before {
+  width: 25px;
+  height: 25px;
+  flex-basis: 25px;
+}
